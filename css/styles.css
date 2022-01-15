@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 
 body{
@@ -30,10 +31,12 @@ p{
     font-weight: 700;
     font-size: 16px;
     padding: 16px 24px;
-    border: none;
+    border: 1px solid #ffff;
     border-radius: 41px;
     margin-top: 16px;
     cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .button i{
@@ -56,11 +59,7 @@ p{
 #nav-toggler{
     display: none;
 }
-.nav-toggler-icon{
-    display: none;
-    color: #fff;
-    font-size: 30px;
-}
+
 
 .card-icon{
     background-color: #FF008E;
@@ -83,9 +82,12 @@ p{
 .navigation li{
     margin: 14px;
 }
-.cart{
+.menu-icon, 
+.cart-icon{
     font-size: 25px;
+    cursor: pointer;
 }
+
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -106,13 +108,28 @@ p{
     display: flex;    
     justify-content: right;
 }
+.image-border{
+    border: 3px solid #F1E4FF;
+    border-radius: 240px;
+}
+
 .banner-right img{
     width: 440px;
     height: 414px;
-    border: 3px solid #F1E4FF;
-    border-radius: 240px;
-    padding: 30px 33px 30px 2px;
+    padding: 50px 33px 2px 2px;
+    animation:  up-down 3s linear infinite;
 
+}
+/* Banner Image Animation */
+
+@keyframes up-down {
+0%,
+100% {
+    transform: translateY(0rem);
+}
+50% {
+    transform: translateY(-3.5rem);
+}
 }
 
 /* Company Logo Area */
@@ -283,5 +300,14 @@ input {
 }
 
 .button:hover{
-     background: #fc025e;
+     background: transparent;
+     color: #3A3A3A;
+     border: 1px solid #fd0661;
+}
+
+
+/* mobile menu */
+
+.mobile-nav-items{
+    display: none;
 }
