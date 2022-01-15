@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;600;700&display=swap');
+
+/* Css Reset & Common Css */
 *{
     margin: 0;
     padding: 0;
@@ -42,12 +44,40 @@ p{
 .button i{
     margin-left: 8px;
 }
+.see-more-button{
+    color:#E02C6DDE;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 41px;
+    margin-top: 53px;
+    text-align: right;
+    display: inherit;
+    transition: 0.3s;
+}
+.see-more-button i{
+    margin-left: 8px;
+}
+
+.button:hover{
+    background: transparent;
+    color: #3A3A3A;
+    border: 1px solid #fd0661;
+    font-size: 16.3px;
+}
+.see-more-button:hover{
+    color:#f785afde;
+}
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding:0 30px;
 }
+
+/* Header Area */
+
 .pc-nav-items{
     display: flex;
     justify-content: space-between;
@@ -55,11 +85,11 @@ p{
     padding-top: 30px;
 }
 
-/* navbar */
-#nav-toggler{
+/* navbar for mobile */
+
+.mobile-nav-items{
     display: none;
 }
-
 
 .card-icon{
     background-color: #FF008E;
@@ -120,6 +150,7 @@ p{
     animation:  up-down 3s linear infinite;
 
 }
+
 /* Banner Image Animation */
 
 @keyframes up-down {
@@ -151,10 +182,7 @@ p{
     object-fit: cover;
 }
 
-
-
-
-/* Collection Area */
+/* Products Collection Area */
 
 .collection-area{
     max-width: 1047px;
@@ -229,31 +257,16 @@ p{
     margin-top: 10px;
 }
 
-.see-more-button{
-    color:#E02C6DDE;
-    font-weight: 700;
-    font-size: 16px;
-    margin: 10px 10px;
-    border: none;
-    border-radius: 41px;
-    margin-top: 50px;
-    text-align: right;
-    display: inherit;
-
-}
-.see-more-button i{
-    margin-left: 8px;
-}
 
 /* News Letter Area */
 .news-letter{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* text-align: center; */
     margin-top: 100px;
 }
 .news-letter-left img{
     width: 90%;
+    border-radius: 4px;
 }
 .news-letter-right{
     margin: 30px;
@@ -299,15 +312,3 @@ input {
     padding: 0 10px;
 }
 
-.button:hover{
-     background: transparent;
-     color: #3A3A3A;
-     border: 1px solid #fd0661;
-}
-
-
-/* mobile menu */
-
-.mobile-nav-items{
-    display: none;
-}

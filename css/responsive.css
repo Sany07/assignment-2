@@ -1,6 +1,6 @@
 
 /* responsive css */
-
+/*  Tab Layout */
 @media (max-width:950px){
 
 
@@ -56,6 +56,8 @@
 }
 }
 
+/* Mobile Layout */
+
 @media (max-width:800px){
 
 .pc-nav-items{
@@ -102,10 +104,13 @@
  
 }
 .banner-left h1{
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 25px;
+    line-height: 35px;
 }
-
+.banner-left p{
+    font-size: 15px;
+    line-height: 25px;
+}
 .banner-right{
     justify-content:  center;
 }
