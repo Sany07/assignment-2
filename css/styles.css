@@ -29,7 +29,7 @@ p{
     color: #ffff;
     font-weight: 700;
     font-size: 16px;
-    padding: 10px 24px;
+    padding: 16px 24px;
     border: none;
     border-radius: 41px;
     margin-top: 16px;
@@ -45,11 +45,30 @@ p{
     margin: 0 auto;
     padding:0 30px;
 }
-.nav-items{
+.pc-nav-items{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+}
+
+/* navbar */
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.card-icon{
+    background-color: #FF008E;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    color: #fff;
 }
 
 .logo h1{
@@ -76,7 +95,6 @@ p{
     display: flex;    
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 
 }
 .banner-left h1{
@@ -96,6 +114,28 @@ p{
     padding: 30px 33px 30px 2px;
 
 }
+
+/* Company Logo Area */
+
+.company-logo{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    justify-items: center;
+    padding:30px;
+    border-top: 2px solid #e1e1ee;
+    border-bottom: 2px solid #e1e1ee;
+    margin: 100px 0;
+    
+}
+
+.company-logo img{
+    width: 55%;
+    object-fit: cover;
+}
+
+
+
 
 /* Collection Area */
 
@@ -120,7 +160,6 @@ p{
 }
 .card{
     text-align: center;
-    width: 300px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -128,8 +167,8 @@ p{
 }
 
 .card img{
-    width: 271px;
-    height: 256px;
+    width: 281px;
+    height: 266px;
     border-radius: 5px; 
     object-fit: cover;
 }
@@ -197,7 +236,7 @@ p{
     margin-top: 100px;
 }
 .news-letter-left img{
-    text-align: left;
+    width: 90%;
 }
 .news-letter-right{
     margin: 30px;
@@ -241,4 +280,8 @@ input {
 }
 .social-items li{
     padding: 0 10px;
+}
+
+.button:hover{
+     background: #fc025e;
 }
